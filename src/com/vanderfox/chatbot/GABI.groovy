@@ -7,6 +7,9 @@ class GABI {
 
     static void main(String... args) {
         println 'Groovy world!'
+        ControlThread control = new ControlThread()
+        control.start()
+        control.join()
     }
 
 }
